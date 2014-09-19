@@ -2,6 +2,6 @@
   "use strict";
 
   this.getFactorions = function() {
-    return [40585];
+    return [1, 2, 145, 40585];
   };
 }).call(this);

@@ -59,7 +59,8 @@ describe("4. Randomize Objects", function() {
 });
 
 describe("5. Factorions", function() {
-  it('has 40585', function () {
-    (-1 < getFactorions().indexOf(40585)).should.equal(true);
+  it('get all factorion', function () {
+    // see https://ru.wikipedia.org/wiki/Факторион
+    getFactorions().should.equal([1, 2, 145, 40585]);
   });
 });
