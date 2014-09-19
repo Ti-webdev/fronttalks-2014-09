@@ -56,6 +56,18 @@ describe("4. Randomize Objects", function() {
     });
     (-1 < [1, 2, 3].indexOf(result)).should.equal(true);
   });
+  it('4, 5 or 6', function () {
+    var result = random({
+      a: {
+        b: {
+          e: 4
+        },
+        c: 5,
+        d: 6
+      }
+    });
+    (-1 < [4, 5, 6].indexOf(result)).should.equal(true);
+  });
 });
 
 describe("5. Factorions", function() {
