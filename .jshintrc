@@ -55,5 +55,6 @@
     "sub": true,
     "strict": false,
     "white": true,
+    "multistr": true,
     "unused": true
 }

@@ -3,5 +3,5 @@
 
   this.jpath = function() {
     return 'd';
-  }
+  };
 }).call(this);
