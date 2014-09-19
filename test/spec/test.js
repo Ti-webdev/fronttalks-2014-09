@@ -61,6 +61,6 @@ describe("4. Randomize Objects", function() {
 describe("5. Factorions", function() {
   it('get all factorion', function () {
     // see https://ru.wikipedia.org/wiki/Факторион
-    getFactorions().should.equal([1, 2, 145, 40585]);
+    getFactorions().should.eql([1, 2, 145, 40585]);
   });
 });
