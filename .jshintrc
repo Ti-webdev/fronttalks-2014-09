@@ -28,7 +28,23 @@
       "beforeEach"           : false,
       "waits"                : false,
       "waitsFor"             : false,
-      "runs"                 : false
+      "runs"                 : false,
+      "seven"                : false,
+      "times"                : false,
+      "five"                 : false,
+      "four"                 : false,
+      "plus"                 : false,
+      "nine"                 : false,
+      "eight"                : false,
+      "minus"                : false,
+      "three"                : false,
+      "six"                  : false,
+      "dividedBy"            : false,
+      "two"                  : false,
+      "jpath"                : false,
+      "isValid"              : false,
+      "random"               : false,
+      "getFactorions"        : false
     },
 
     "node" : true,
@@ -56,5 +72,6 @@
     "strict": false,
     "white": true,
     "multistr": true,
+    "laxcomma": true,
     "unused": true
 }
