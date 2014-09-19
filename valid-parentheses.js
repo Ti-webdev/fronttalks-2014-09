@@ -1,35 +1,23 @@
 (function() {
   "use strict";
 
-  // http://geniuscarrier.com/valid-parentheses-javascript/
-  // не работает!
-  function isValidParentheses(str) {
-    var i = 0, l = str.length, arr = [];
-    if (!l) {
-        return true;
-    }
+  // http://codereview.stackexchange.com/questions/14532/checking-for-balanced-brackets-in-javascript
+  // пасибо!
+  var haveSameLength = function(str, a, b){
+    return (str.match(a) || [] ).length === (str.match(b) || [] ).length;
+  };
+  var isBalanced = function(str){
+      var arr = [
+          [ /\(/gm, /\)/gm ], [ /\{/gm, /\}/gm ], [ /\[/gm, /\]/gm ]
+      ], i = arr.length, isClean = true;
 
-    if ((l % 2) !== 0) {
-        return false;
-    }
-
-    while (i < l) {
-        var s = str[i];
-        if (s == "{") {
-            arr.push(s);
-        } else if (s == "}") {
-            if (arr.length) {
-                arr.pop();
-            } else {
-                return false;
-            }
-        }
-        i++;
-    }
-    return true;
-  }
+      while( i-- && isClean ){
+          isClean = haveSameLength( str, arr[i][0], arr[i][1] );
+      }
+      return isClean;
+  };
 
   this.isValid = function(data) {
-    return isValidParentheses(data);
+    return isBalanced(data);
   };
 }).call(this);
