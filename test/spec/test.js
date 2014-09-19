@@ -57,3 +57,9 @@ describe("4. Randomize Objects", function() {
     (-1 < [1, 2, 3].indexOf(result)).should.equal(true);
   });
 });
+
+describe("5. Factorions", function() {
+  it('has 40585', function () {
+    (-1 < getFactorions().indexOf(40585)).should.equal(true);
+  });
+});
