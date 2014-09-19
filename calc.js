@@ -1,43 +1,39 @@
 (function() {
   "use strict";
 
-  this.seven = function() {
-    return 35;
+  var module = this;
+  ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'].forEach(function(name, i) {
+      module[name] = function(operation) {
+        if (0 == arguments.length) {
+          return i+1;
+        }
+        else {
+          return operation(i+1);
+        }
+      };
+  });
+
+  this.times = function(a) {
+    return function(b) {
+      return a*b;
+    }
   };
 
-  this.times = function() {
+  this.plus = function(a) {
+    return function(b) {
+      return a+b;
+    }
   };
 
-  this.four = function() {
-    return 13;
+  this.minus = function(a) {
+    return function(b) {
+      return b-a;
+    }
   };
 
-  this.three = function() {
+  this.dividedBy = function(a) {
+    return function(b) {
+      return b/a;
+    }
   };
-
-  this.two = function() {
-  };
-
-  this.five = function() {
-  };
-
-  this.six = function() {
-    return 3;
-  };
-
-  this.nine = function() {
-  };
-
-  this.plus = function() {
-  };
-
-  this.minus = function() {
-  };
-
-  this.dividedBy = function() {
-  };
-
-  this.eight = function() {
-    return 5;
-  }
 }).call(this);
