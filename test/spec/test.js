@@ -33,13 +33,17 @@ describe("3. Valid Parentheses", function() {
   it('invalid parentheses', function () {
     isValid(")\
 (())\
-)").should.equal(false);
+)").should.equal(false, ")\
+(())\
+)");
   });
 
   it('valid parentheses', function () {
     isValid("\
 (())\
-{}[]").should.equal(true);
+{}[]").should.equal(true, "\
+(())\
+{}[]");
   });
 });
 
