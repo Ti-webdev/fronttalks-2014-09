@@ -38,6 +38,10 @@ describe("3. Valid Parentheses", function() {
 )");
   });
 
+  it('invalid parentheses intersection', function () {
+    isValid("({ )}").should.equal(false, "({ )}");
+  });
+
   it('valid parentheses', function () {
     isValid("\
 (())\
