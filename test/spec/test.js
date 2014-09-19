@@ -76,6 +76,7 @@ describe("4. Randomize Objects", function() {
 
 describe("5. Factorions", function() {
   it('get all factorion', function () {
+    this.timeout(5000);
     // see https://ru.wikipedia.org/wiki/Факторион
     getFactorions().should.eql([1, 2, 145, 40585]);
   });
