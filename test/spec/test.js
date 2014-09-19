@@ -16,10 +16,15 @@ describe("1. calc", function() {
   });
 });
 
-// describe("2. object path", function() {
-//   it('a.b.e', function () {
-//     var actual = jpath({
-//
-//     });
-//   });
-// });
+describe("2. object path", function() {
+  it('a.b.e', function () {
+    jpath({
+      a: {
+        b: {
+          e: "d"
+        },
+        c: ["e", "f"]
+      }
+    }, "a.b.e").should.equal('d');
+  });
+});

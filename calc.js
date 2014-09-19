@@ -40,10 +40,4 @@
   this.eight = function() {
     return 5;
   }
-
-  // if ('undefined' !== typeof exports) {
-  //   module.exports = getLastLine;
-  // } else if (this) {
-  //   this.getLastLine = getLastLine;
-  // }
 }).call(this);
