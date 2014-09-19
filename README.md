@@ -1,10 +1,5 @@
-js-last-line
+fronttalks-2014-09
 ============
 
-Usage:
-```javascript
-var el = document.getElementById('my-text');
-var lastLine = getLastLine(el);
-```
 
-[![Build Status](https://travis-ci.org/Ti-webdev/node-child-process-args.svg?branch=master)](https://travis-ci.org/Ti-webdev/js-last-line)
+[![Build Status](https://travis-ci.org/Ti-webdev/fronttalks-2014-09.svg?branch=master)](https://travis-ci.org/Ti-webdev/fronttalks-2014-09)
