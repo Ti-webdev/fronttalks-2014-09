@@ -42,3 +42,18 @@ describe("3. Valid Parentheses", function() {
 {}[]").should.equal(true);
   });
 });
+
+describe("4. Randomize Objects", function() {
+  it('1, 2 or 3', function () {
+    var result = random({
+      a: {
+        b: {
+          e: 1
+        },
+        c: 2,
+        d: 3
+      }
+    });
+    (-1 < [1, 2, 3].indexOf(result)).should.equal(true);
+  });
+});
